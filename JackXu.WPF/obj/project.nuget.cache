@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hS0PJbut+r/eqCSxfQDk2ZcTMErQZugtRBDe2/sPlc0LS0WwGxnjDluLXs/hUMbZC/ZgbvwHOVLrKheIDkZiOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kelly.osoba\\source\\repos\\JackXu\\JackXu.WPF\\JackXu.WPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kelly.osoba\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
+    "C:\\Users\\kelly.osoba\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\kelly.osoba\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,44 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:JackXu.WPF.CustomControl">
+
+
+    <Style TargetType="{x:Type local:NavButton}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:NavButton}">
+                    <Border x:Name="back" CornerRadius="8" Background="Transparent" 
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="0" Source="{TemplateBinding ImageSource}" Stretch="Uniform" Margin="2"/>
+                            <TextBlock Grid.Row="1" Text="{TemplateBinding Text}" TextAlignment="Center" TextWrapping="Wrap" Margin="2"/>
+                            <Rectangle Name="Line" Grid.RowSpan="2" Fill="Transparent" Stroke="RoyalBlue" StrokeDashArray="1,2" StrokeThickness="0"/>
+                        </Grid>
+
+                    </Border>
+
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="StrokeThickness" TargetName="Line"  Value="1"/>
+                        </Trigger>
+
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="#d0ebff"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

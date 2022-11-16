@@ -1,0 +1,218 @@
+﻿<UserControl x:Class="JackXu.WPF._2DTransformation.Views.MetrixTransformView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:JackXu.WPF._2DTransformation.ViewModels"
+             xmlns:local="clr-namespace:JackXu.WPF._2DTransformation.Views"
+             mc:Ignorable="d" 
+             d:DataContext="{d:DesignInstance Type=vm:MatrixTransformViewModel}"
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Width" Value="30"/>
+        </Style>
+
+    </UserControl.Resources>
+   
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+            <TextBlock Text="Input Matrix" FontSize="25" FontWeight="Bold" Margin="0 15 0 5"/>
+
+            <Border Grid.Row="1" Width="200" BorderBrush="DarkGray" BorderThickness="2 0" CornerRadius="10">
+                <Grid Grid.Row="1" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height=" auto"/>
+                        <RowDefinition Height=" auto"/>
+                        <RowDefinition Height=" auto"/>
+                        <RowDefinition Height=" auto"/>
+                        <RowDefinition Height=" auto"/>
+                        <RowDefinition Height=" auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="M11" Grid.Column="0" Grid.Row="0"/>
+                    <TextBox Text="{Binding M11, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" Grid.Row="1"/>
+
+                    <TextBlock Text="M21" Grid.Column="0" Grid.Row="2"/>
+                    <TextBox Text="{Binding M21, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" Grid.Row="3"/>
+
+                    <TextBlock Text="M31" Grid.Column="0" Grid.Row="4"/>
+                    <TextBox Text="{Binding OffsetX, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" Grid.Row="5"/>
+
+
+                    <TextBlock Text="M12" Grid.Column="1" Grid.Row="0"/>
+                    <TextBox Text="{Binding M12, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="1"/>
+
+                    <TextBlock Text="M22" Grid.Column="1" Grid.Row="2"/>
+                    <TextBox Text="{Binding M22, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="3"/>
+
+                    <TextBlock Text="M32" Grid.Column="1" Grid.Row="4"/>
+                    <TextBox Text="{Binding OffsetY, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="5"/>
+
+
+                    <TextBlock Text="M13" Grid.Column="2" Grid.Row="0"/>
+                    <TextBox x:Name="m13" Grid.Column="2" Grid.Row="1"/>
+
+                    <TextBlock Text="M23" Grid.Column="2" Grid.Row="2"/>
+                    <TextBox x:Name="m23" Grid.Column="2" Grid.Row="3"/>
+
+                    <TextBlock Text="M33" Grid.Column="2" Grid.Row="4"/>
+                    <TextBox x:Name="m33" Grid.Column="2" Grid.Row="5"/>
+                </Grid>
+            </Border>
+            
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="0 15">
+           
+            <Border BorderBrush="LightGray" Padding="2" BorderThickness="1" HorizontalAlignment="Center" >
+                <WrapPanel Grid.Column="0"  Orientation="Horizontal">
+                    <StackPanel Margin="0 0 10 0">
+                        <Button Command="{Binding ScaleCommand}"  Content="Scale" Grid.Column="0" HorizontalAlignment="Center" Padding="7 3"/>
+                        <StackPanel Orientation="Horizontal" Margin="0 5">
+                            <StackPanel Margin="0 0 5 0">
+                                <TextBlock Text="Sx"/>
+                                <TextBox Text="{Binding Sx, UpdateSourceTrigger=PropertyChanged}"/>
+                            </StackPanel>
+                            <StackPanel Margin="0 0 5 0">
+                                <TextBlock Text="Sy"/>
+                                <TextBox Text="{Binding Sy, UpdateSourceTrigger=PropertyChanged}"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Margin="0 0 10 0">
+                        <Button Command="{Binding TranslateCommand}" Content="Translate" Grid.Column="0" HorizontalAlignment="Center" Padding="7 3"/>
+                        <StackPanel Orientation="Horizontal" Margin="0 5">
+                            <StackPanel Margin="0 0 5 0">
+                                <TextBlock Text="dx"/>
+                                <TextBox Text="{Binding Dx, UpdateSourceTrigger=PropertyChanged}"/>
+                            </StackPanel>
+                            <StackPanel Margin="0 0 5 0">
+                                <TextBlock Text="dy"/>
+                                <TextBox Text="{Binding Dy, UpdateSourceTrigger=PropertyChanged}"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Margin="0 0 10 0">
+                        <Button Command="{Binding RotateCommand}" Content="Rotate" Grid.Column="0" HorizontalAlignment="Center" Padding="7 3"/>
+                        <StackPanel Margin="0 0 5 0">
+                            <TextBlock Text="angle"/>
+                            <TextBox Text="{Binding Angle, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Margin="0 0 10 0">
+                        <Button Content="Rotate at" Grid.Column="0" HorizontalAlignment="Center" Padding="7 3"/>
+                        <StackPanel Orientation="Horizontal" Margin="0 5">
+                            <StackPanel Margin="0 0 5 0">
+                                <TextBlock Text="angle"/>
+                                <TextBox Name="angleAt"/>
+                            </StackPanel>
+                            <StackPanel Margin="0 0 5 0">
+                                <TextBlock Text="x"/>
+                                <TextBox Name="x"/>
+                            </StackPanel>
+                            <StackPanel Margin="0 0 5 0">
+                                <TextBlock Text="y"/>
+                                <TextBox Name="y"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </WrapPanel>
+
+                
+            </Border>
+            
+
+            
+            
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+            <TextBlock Text="Output Matrix" FontSize="25" FontWeight="Bold" Margin="0 15 0 5"/>
+
+            <Border Grid.Row="1" Width="200" BorderBrush="DarkGray" BorderThickness="4 0" CornerRadius="10">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height=" auto"/>
+                        <RowDefinition Height=" auto"/>
+                        <RowDefinition Height=" auto"/>
+                        <RowDefinition Height=" auto"/>
+                        <RowDefinition Height=" auto"/>
+                        <RowDefinition Height=" auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="M11" Grid.Column="0" Grid.Row="0"/>
+                    <TextBox Text="{Binding M11r, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" Grid.Row="1"/>
+
+                    <TextBlock Text="M21" Grid.Column="0" Grid.Row="2"/>
+                    <TextBox Text="{Binding M21r, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" Grid.Row="3"/>
+
+                    <TextBlock Text="M31" Grid.Column="0" Grid.Row="4"/>
+                    <TextBox Text="{Binding OffsetXr, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" Grid.Row="5"/>
+
+
+                    <TextBlock Text="M12" Grid.Column="1" Grid.Row="0"/>
+                    <TextBox Text="{Binding M12r, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="1"/>
+
+                    <TextBlock Text="M22" Grid.Column="1" Grid.Row="2"/>
+                    <TextBox Text="{Binding M22r, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="3"/>
+
+                    <TextBlock Text="M32" Grid.Column="1" Grid.Row="4"/>
+                    <TextBox Text="{Binding OffsetYr, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="5"/>
+
+
+                    <TextBlock Text="M13" Grid.Column="2" Grid.Row="0"/>
+                    <TextBox x:Name="Rm13" Grid.Column="2" Grid.Row="1"/>
+
+                    <TextBlock Text="M23" Grid.Column="2" Grid.Row="2"/>
+                    <TextBox x:Name="Rm23" Grid.Column="2" Grid.Row="3"/>
+
+                    <TextBlock Text="M33" Grid.Column="2" Grid.Row="4"/>
+                    <TextBox x:Name="Rm33" Grid.Column="2" Grid.Row="5"/>
+                </Grid>
+            </Border>
+
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="2DTransformation\Views\CompositeTransformView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="2DTransformation\Views\MatrixTransformClassView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="2DTransformation\Views\MetrixTransformView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="2DTransformation\Views\PerpendicularLineView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="2DTransformation\Views\ScaleTransformView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="2DTransformation\Views\TransfermationView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="2DTransformation\Views\TranslateTransformView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GraphicBasic2D\Views\BezierCurvesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GraphicBasic2D\Views\Chart2DResizableCanvasView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GraphicBasic2D\Views\Chart2DSysView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GraphicBasic2D\Views\GraphicBasic2DView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GraphicBasic2D\Views\LineDashStyleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GraphicBasic2D\Views\LineInCustomSystemView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GraphicBasic2D\Views\PolyLineView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GraphicBasic2D\Views\ScaleInCustomSysView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Main\Views\HomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Main\Views\StartupWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="2DTransformation\Views\CompositeTransformView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="2DTransformation\Views\MatrixTransformClassView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="2DTransformation\Views\MetrixTransformView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="2DTransformation\Views\PerpendicularLineView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="2DTransformation\Views\ScaleTransformView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="2DTransformation\Views\TransfermationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="2DTransformation\Views\TranslateTransformView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GraphicBasic2D\Views\BezierCurvesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GraphicBasic2D\Views\Chart2DResizableCanvasView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GraphicBasic2D\Views\Chart2DSysView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GraphicBasic2D\Views\GraphicBasic2DView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GraphicBasic2D\Views\LineDashStyleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GraphicBasic2D\Views\LineInCustomSystemView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GraphicBasic2D\Views\PolyLineView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GraphicBasic2D\Views\ScaleInCustomSysView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Main\Views\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Main\Views\StartupWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
