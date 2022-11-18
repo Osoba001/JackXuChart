@@ -1,0 +1,12 @@
+C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\bin\Debug\net6.0\JackXu.Library.deps.json
+C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\bin\Debug\net6.0\JackXu.Library.dll
+C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\bin\Debug\net6.0\ref\JackXu.Library.dll
+C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\bin\Debug\net6.0\JackXu.Library.pdb
+C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\obj\Debug\net6.0\JackXu.Library.csproj.AssemblyReference.cache
+C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\obj\Debug\net6.0\JackXu.Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\obj\Debug\net6.0\JackXu.Library.AssemblyInfoInputs.cache
+C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\obj\Debug\net6.0\JackXu.Library.AssemblyInfo.cs
+C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\obj\Debug\net6.0\JackXu.Library.csproj.CoreCompileInputs.cache
+C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\obj\Debug\net6.0\JackXu.Library.dll
+C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\obj\Debug\net6.0\ref\JackXu.Library.dll
+C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\obj\Debug\net6.0\JackXu.Library.pdb

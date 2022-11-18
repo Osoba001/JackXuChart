@@ -61,3 +61,5 @@ C:\Users\kelly.osoba\source\repos\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\Gra
 C:\Users\kelly.osoba\source\repos\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\GraphicBasic2D\Views\PolyLineView.baml
 C:\Users\kelly.osoba\source\repos\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\GraphicBasic2D\Views\BezierCurvesView.g.cs
 C:\Users\kelly.osoba\source\repos\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\GraphicBasic2D\Views\BezierCurvesView.baml
+C:\Users\kelly.osoba\source\repos\JackXu\JackXu.WPF\bin\Debug\net6.0-windows\JackXu.Library.dll
+C:\Users\kelly.osoba\source\repos\JackXu\JackXu.WPF\bin\Debug\net6.0-windows\JackXu.Library.pdb

@@ -11,4 +11,8 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JackXu.Library\JackXu.Library.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,5 @@
-﻿using JackXu.WPF.Main.Commands;
+﻿using JackXu.Library._2DTransform;
+using JackXu.WPF.Main.Commands;
 using JackXu.WPF.Main.ViewModels;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,7 +43,7 @@ namespace JackXu.WPF._2DTransformation.ViewModels
                 RotateCommand.RaiseCanExecuteChange();
             }
         }
-        
+
         private double _m21;
         public double M21
         {
@@ -156,8 +157,8 @@ namespace JackXu.WPF._2DTransformation.ViewModels
             //FormMatrix();
             // matrix.Scale(Sx, Sy);
             FormCustomMatric();
-           var mat= customMatrix.Scale(sx, sy);
-            BindCustomMatrixElementToPpy(mat);
+            customMatrix.Scale(sx, sy);
+            BindCustomMatrixElementToPpy(customMatrix);
 
         }
 
@@ -199,8 +200,8 @@ namespace JackXu.WPF._2DTransformation.ViewModels
         private void TranslateMatrix()
         {
             FormCustomMatric();
-            var mat = customMatrix.Translate(Dx, Dy);
-            BindCustomMatrixElementToPpy(mat);
+             customMatrix.Translate(Dx, Dy);
+            BindCustomMatrixElementToPpy(customMatrix);
 
         }
         private bool CanExecuteTranslateMatrix()
@@ -228,8 +229,8 @@ namespace JackXu.WPF._2DTransformation.ViewModels
         private void RotateMatrix()
         {
             FormCustomMatric();
-            var mat = customMatrix.Rotate(Angle);
-            BindCustomMatrixElementToPpy(mat);
+            customMatrix.Rotate(Angle);
+            BindCustomMatrixElementToPpy(customMatrix);
         }
         private bool CanExecuteRotateMatrix()
         {
@@ -262,8 +263,8 @@ namespace JackXu.WPF._2DTransformation.ViewModels
         private void RotateMatrixAt()
         {
             FormCustomMatric();
-           var mat= customMatrix.RotateAt(Angle, rotateAtX, rotateAtY);
-            BindCustomMatrixElementToPpy(mat);
+           customMatrix.RotateAt(Angle, rotateAtX, rotateAtY);
+            BindCustomMatrixElementToPpy(customMatrix);
         }
 
         private bool CanExecuteRotateMatrixAt()
@@ -300,8 +301,8 @@ namespace JackXu.WPF._2DTransformation.ViewModels
         private void SkewMatrix()
         {
             FormCustomMatric();
-            var mat = customMatrix.Skew(skewX,skewY);
-            BindCustomMatrixElementToPpy(mat);
+            customMatrix.Skew(skewX,skewY);
+            BindCustomMatrixElementToPpy(customMatrix);
         }
 
         private bool CanExecuteSkewMatrix()

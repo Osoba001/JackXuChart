@@ -41,6 +41,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "JackXu.Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/JackXu.Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JackXu.Library.dll": {}
+        }
       }
     }
   },
@@ -119,10 +129,16 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "JackXu.Library/1.0.0": {
+      "type": "project",
+      "path": "../JackXu.Library/JackXu.Library.csproj",
+      "msbuildProject": "../JackXu.Library/JackXu.Library.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "JackXu.Library >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection >= 6.0.1"
     ]
   },
@@ -152,7 +168,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\kelly.osoba\\source\\repos\\JackXu\\JackXu.Library\\JackXu.Library.csproj": {
+              "projectPath": "C:\\Users\\kelly.osoba\\source\\repos\\JackXu\\JackXu.Library\\JackXu.Library.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
