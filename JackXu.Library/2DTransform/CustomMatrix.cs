@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,8 +9,6 @@ namespace JackXu.Library._2DTransform
 {
     public struct CustomMatrix
     {
-
-
         public CustomMatrix(double m11, double m12, double m21, double m22, double offsetX, double offsetY)
         {
             M11 = m11;
@@ -26,30 +25,44 @@ namespace JackXu.Library._2DTransform
         public double M22 { get; private set; }
         public double OffsetX { get; private set; }
         public double OffsetY { get; private set; }
-        
 
-        public double Determinant { get { return 0; } }
-        public bool HasInvers { get { return true; } }
-        public bool IsIdentity { get { return true; } }
-        public static CustomMatrix Identity { get { return new CustomMatrix(); } }
+        public double Determinant { get { return M11 * M22 - M12 * M21; } }
+        public bool IsIdentity { get { return Determinant == 1; } }
+        public bool HasInverse { get { return Determinant != 0; } }
+        public CustomMatrix Inverse { get { return ComputeDeterminant(); } }
+
+        private CustomMatrix ComputeDeterminant()
+        {
+            CustomMatrix inverse = new();
+            if (HasInverse)
+            {
+                inverse = new CustomMatrix(
+                                M22 / Determinant, -M12 / Determinant,
+                                -M21 / Determinant, M11 / Determinant,
+                                OffsetX, OffsetY
+                                );
+            }
+            return inverse;
+        }
+
 
         public void Scale(double x=1, double y=1)
         {
             var homogenous = new CustomMatrix(x, 0, 0, y, 0, 0);
-            this=this*homogenous;
+            this *=homogenous;
         }
 
         public void Translate(double dx = 0, double dy = 0)
         {
             var homogenous = new CustomMatrix(1, 0, 0, 1, dx, dy);
-            this = this * homogenous;
+            this *= homogenous;
         }
 
         public void Rotate(double angle)
         {
             angle*=Math.PI/180;
             var homogenous = new CustomMatrix(Math.Cos(angle), Math.Sin(angle), -Math.Sin(angle), Math.Cos(angle), 0, 0);
-            this = this * homogenous;
+            this *= homogenous;
         }
         public void RotateAt(double angle, double x,double y)
         {
@@ -59,7 +72,7 @@ namespace JackXu.Library._2DTransform
             var Homogenousend = new CustomMatrix(1, 0, 0, 1, x, y);
 
             var Homogenous = HomogenousStart * HomogenousMid * Homogenousend;
-            this = this * Homogenous;
+            this *= Homogenous;
         }
 
         public void Skew(double angleX, double angleY)
@@ -67,7 +80,7 @@ namespace JackXu.Library._2DTransform
             angleX = angleX * Math.PI / 180;
             angleY = angleY * Math.PI / 180;
             var Homogenous = new CustomMatrix(1, Math.Tan(angleY), Math.Tan(angleX), 1, 0, 0);
-            this = this * Homogenous;
+            this *=  Homogenous;
         }
 
         public static CustomMatrix operator * (CustomMatrix m1, CustomMatrix m2)
@@ -101,6 +114,7 @@ namespace JackXu.Library._2DTransform
             return !(m1 == m2);
         }
 
+       
 
 
     }

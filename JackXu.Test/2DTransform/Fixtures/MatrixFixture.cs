@@ -33,5 +33,10 @@ namespace JackXu.Test._2DTransform.Fixtures
         {
             return new CustomMatrix(-0.707, 2.121, -0.707, 4.949, -0.707, 0.707);
         }
+        public static CustomMatrix RotatedAtMatrix2By45()
+        {
+            return new CustomMatrix(-0.707, 2.121, -0.707, 4.949, 1, 0.586);
+        }
+        
     }
 }

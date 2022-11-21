@@ -10,3 +10,15 @@ C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\obj\Debug\net6.0\JackXu.
 C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\obj\Debug\net6.0\JackXu.Library.dll
 C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\obj\Debug\net6.0\ref\JackXu.Library.dll
 C:\Users\kelly.osoba\source\repos\JackXu\JackXu.Library\obj\Debug\net6.0\JackXu.Library.pdb
+C:\Users\DELL\Desktop\Apps\JackXu\JackXuChart\JackXu.Library\bin\Debug\net6.0\JackXu.Library.deps.json
+C:\Users\DELL\Desktop\Apps\JackXu\JackXuChart\JackXu.Library\bin\Debug\net6.0\JackXu.Library.dll
+C:\Users\DELL\Desktop\Apps\JackXu\JackXuChart\JackXu.Library\bin\Debug\net6.0\JackXu.Library.pdb
+C:\Users\DELL\Desktop\Apps\JackXu\JackXuChart\JackXu.Library\obj\Debug\net6.0\JackXu.Library.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Apps\JackXu\JackXuChart\JackXu.Library\obj\Debug\net6.0\JackXu.Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\Apps\JackXu\JackXuChart\JackXu.Library\obj\Debug\net6.0\JackXu.Library.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\Apps\JackXu\JackXuChart\JackXu.Library\obj\Debug\net6.0\JackXu.Library.AssemblyInfo.cs
+C:\Users\DELL\Desktop\Apps\JackXu\JackXuChart\JackXu.Library\obj\Debug\net6.0\JackXu.Library.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Apps\JackXu\JackXuChart\JackXu.Library\obj\Debug\net6.0\JackXu.Library.dll
+C:\Users\DELL\Desktop\Apps\JackXu\JackXuChart\JackXu.Library\obj\Debug\net6.0\refint\JackXu.Library.dll
+C:\Users\DELL\Desktop\Apps\JackXu\JackXuChart\JackXu.Library\obj\Debug\net6.0\JackXu.Library.pdb
+C:\Users\DELL\Desktop\Apps\JackXu\JackXuChart\JackXu.Library\obj\Debug\net6.0\ref\JackXu.Library.dll

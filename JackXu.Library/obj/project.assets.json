@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\kelly.osoba\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kelly.osoba\\source\\repos\\JackXu\\JackXu.Library\\JackXu.Library.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\Apps\\JackXu\\JackXuChart\\JackXu.Library\\JackXu.Library.csproj",
       "projectName": "JackXu.Library",
-      "projectPath": "C:\\Users\\kelly.osoba\\source\\repos\\JackXu\\JackXu.Library\\JackXu.Library.csproj",
-      "packagesPath": "C:\\Users\\kelly.osoba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kelly.osoba\\source\\repos\\JackXu\\JackXu.Library\\obj\\",
+      "projectPath": "C:\\Users\\DELL\\Desktop\\Apps\\JackXu\\JackXuChart\\JackXu.Library\\JackXu.Library.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DELL\\Desktop\\Apps\\JackXu\\JackXuChart\\JackXu.Library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kelly.osoba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -60,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

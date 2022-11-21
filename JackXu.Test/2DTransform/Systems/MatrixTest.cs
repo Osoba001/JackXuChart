@@ -50,11 +50,41 @@ namespace JackXu.Test._2DTransform.Systems
             m.Should().BeEquivalentTo(MatrixFixture.TranslatedMatrix2by1xHalf());
         }
         [Fact]
+        public void RotateAt_WhenPassedAngle_RotatedMatrix()
+        {
+            var m = MatrixFixture.Matrix2();
+            
+            m.Rotate(45);
+            double preci = 0.01;
+            m.M11.Should().BeApproximately(MatrixFixture.RotatedMatrix2By45().M11, preci);
+            m.M12.Should().BeApproximately(MatrixFixture.RotatedMatrix2By45().M12, preci);
+            m.M21.Should().BeApproximately(MatrixFixture.RotatedMatrix2By45().M21, preci);
+            m.M22.Should().BeApproximately(MatrixFixture.RotatedMatrix2By45().M22, preci);
+            m.OffsetX.Should().BeApproximately(MatrixFixture.RotatedMatrix2By45().OffsetX, preci);
+            m.OffsetY.Should().BeApproximately(MatrixFixture.RotatedMatrix2By45().OffsetY, preci);
+        }
+
+        [Fact]
         public void Rotate_WhenPassedAngle_RotatedMatrix()
         {
             var m = MatrixFixture.Matrix2();
-            m.Rotate(45);
-            m.Should().BeEquivalentTo(MatrixFixture.RotatedMatrix2By45());
+            m.RotateAt(45,1,2);
+            double preci = 0.01;
+            m.M11.Should().BeApproximately(MatrixFixture.RotatedAtMatrix2By45().M11, preci);
+            m.M12.Should().BeApproximately(MatrixFixture.RotatedAtMatrix2By45().M12, preci);
+            m.M21.Should().BeApproximately(MatrixFixture.RotatedAtMatrix2By45().M21, preci);
+            m.M22.Should().BeApproximately(MatrixFixture.RotatedAtMatrix2By45().M22, preci);
+            m.OffsetX.Should().BeApproximately(MatrixFixture.RotatedAtMatrix2By45().OffsetX, preci);
+            m.OffsetY.Should().BeApproximately(MatrixFixture.RotatedAtMatrix2By45().OffsetY, preci);
+        }
+
+        [Fact]
+        public void Determinant_GetDeterminant()
+        {
+            var m = MatrixFixture.IdentityMatrix();
+            m.Determinant.Should().Be(1);
+            m.HasInverse.Should().BeTrue();
+            m.IsIdentity.Should().BeTrue();
         }
     }
 }
