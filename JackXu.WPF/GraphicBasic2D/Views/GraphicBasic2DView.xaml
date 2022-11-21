@@ -20,6 +20,7 @@
             <hm:NavButton Text="LineDashStyle" NavUri="/GraphicBasic2D/Views/LineDashStyleView.xaml"/>
             <hm:NavButton Text="Polyline" NavUri="/GraphicBasic2D/Views/PolyLineView.xaml"/>
             <hm:NavButton Text="Bezier Curve" NavUri="/GraphicBasic2D/Views/BezierCurvesView.xaml"/>
+            <hm:NavButton Text="Hit Test" NavUri="/GraphicBasic2D/Views/HitTestingView.xaml"/>
         </ListBox>
         <Frame  Grid.Column="1" x:Name="navframe" NavigationUIVisibility="Hidden" Background="#e9ecef"/>
        

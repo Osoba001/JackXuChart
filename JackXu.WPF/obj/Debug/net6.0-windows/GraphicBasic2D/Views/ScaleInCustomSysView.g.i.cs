@@ -61,7 +61,7 @@ namespace JackXu.WPF.GraphicBasic2D.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/JackXu.WPF;V1.0.0.0;component/graphicbasic2d/views/scaleincustomsysview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/JackXu.WPF;component/graphicbasic2d/views/scaleincustomsysview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\GraphicBasic2D\Views\ScaleInCustomSysView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

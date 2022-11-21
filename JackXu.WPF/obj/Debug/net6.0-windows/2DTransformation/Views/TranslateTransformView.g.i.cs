@@ -77,8 +77,7 @@ namespace JackXu.WPF._2DTransformation.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/JackXu.WPF;V1.0.0.0;component/2dtransformation/views/translatetransformview.xaml" +
-                    "", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/JackXu.WPF;component/2dtransformation/views/translatetransformview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\2DTransformation\Views\TranslateTransformView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

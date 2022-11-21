@@ -109,8 +109,7 @@ namespace JackXu.WPF.GraphicBasic2D.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/JackXu.WPF;V1.0.0.0;component/graphicbasic2d/views/chart2dresizablecanvasview.xa" +
-                    "ml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/JackXu.WPF;component/graphicbasic2d/views/chart2dresizablecanvasview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\GraphicBasic2D\Views\Chart2DResizableCanvasView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

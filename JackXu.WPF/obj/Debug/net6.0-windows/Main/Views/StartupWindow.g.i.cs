@@ -70,7 +70,7 @@ namespace JackXu.WPF.Main.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/JackXu.WPF;V1.0.0.0;component/main/views/startupwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/JackXu.WPF;component/main/views/startupwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Main\Views\StartupWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

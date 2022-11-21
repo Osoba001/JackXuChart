@@ -20,9 +20,65 @@ namespace JackXu.WPF.GraphicBasic2D.Views
     /// </summary>
     public partial class HitTestingView : UserControl
     {
+        private List<Rectangle> hitList= new();
+        private EllipseGeometry hitArea = new();
         public HitTestingView()
         {
             InitializeComponent();
+            Onitialize();
+        }
+
+        private void Onitialize()
+        {
+            foreach (Rectangle rect in canvas1.Children)
+            {
+                rect.Fill = Brushes.LightBlue;
+            }
+        }
+        private void OnMounseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Onitialize();
+
+            //Get Mouse click point
+            Point pt= e.GetPosition(canvas1);
+
+            //Define hit-testing Area
+            hitArea = new EllipseGeometry(pt, 1.0, 1.0);
+            hitList.Clear();
+
+            //Call HitTest Method
+            VisualTreeHelper.HitTest(canvas1, null, new HitTestResultCallback(HitTestCallBack),
+                new GeometryHitTestParameters(hitArea));
+            if (hitList.Count>0)
+            {
+                foreach (Rectangle rect in hitList)
+                {
+                    rect.Fill = Brushes.LightCoral;
+                }
+                //MessageBox.Show("You hit " + hitList.Count.ToString() + " rectangle");
+            }
+        }
+
+        public HitTestResultBehavior HitTestCallBack( HitTestResult result)
+        {
+            //Retrieve the result of the hit test
+            IntersectionDetail intersectionDetail=((GeometryHitTestResult)result).IntersectionDetail;
+
+            switch (intersectionDetail)
+            {
+                case IntersectionDetail.FullyContains:
+                    hitList.Add((Rectangle)result.VisualHit);
+                    return HitTestResultBehavior.Continue;
+
+                case IntersectionDetail.Intersects:
+                    return HitTestResultBehavior.Continue;
+                
+                case IntersectionDetail.FullyInside:
+                    return HitTestResultBehavior.Continue;
+                
+                default:
+                    return HitTestResultBehavior.Stop;
+            }
         }
     }
 }
