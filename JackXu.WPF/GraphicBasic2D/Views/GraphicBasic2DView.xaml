@@ -8,12 +8,12 @@
              d:DesignHeight="800" d:DesignWidth="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="120"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <ListBox SelectionChanged="sidebar_selectedChanged" SelectionMode="Single" x:Name="sidebar" Margin="0">
-            <hm:NavButton Text="Line Custom sys " NavUri="/GraphicBasic2D/Views/LineInCustomSystemView.xaml"/>
+        <ListBox SelectionChanged="sidebar_selectedChanged" SelectionMode="Single" x:Name="sidebar" Margin="0"  Background="Transparent" Foreground="{DynamicResource fg}" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <hm:NavButton Text="Line Custom sys " NavUri="/GraphicBasic2D/Views/LineInCustomSystemView.xaml" />
             <hm:NavButton Text="Scale Custom sys" NavUri="/GraphicBasic2D/Views/ScaleInCustomSysView.xaml"/>
             <hm:NavButton Text="Chart 2D" NavUri="/GraphicBasic2D/Views/Chart2DSysView.xaml"/>
             <hm:NavButton Text="Resizable 2D Chart" NavUri="/GraphicBasic2D/Views/Chart2DResizableCanvasView.xaml"/>
@@ -22,7 +22,7 @@
             <hm:NavButton Text="Bezier Curve" NavUri="/GraphicBasic2D/Views/BezierCurvesView.xaml"/>
             <hm:NavButton Text="Hit Test" NavUri="/GraphicBasic2D/Views/HitTestingView.xaml"/>
         </ListBox>
-        <Frame  Grid.Column="1" x:Name="navframe" NavigationUIVisibility="Hidden" Background="#e9ecef"/>
+        <Frame  Grid.Column="1" x:Name="navframe" NavigationUIVisibility="Hidden"/>
        
     </Grid>
 </UserControl>

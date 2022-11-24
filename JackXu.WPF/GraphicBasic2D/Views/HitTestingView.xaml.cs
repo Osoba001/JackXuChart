@@ -55,7 +55,7 @@ namespace JackXu.WPF.GraphicBasic2D.Views
                 {
                     rect.Fill = Brushes.LightCoral;
                 }
-                //MessageBox.Show("You hit " + hitList.Count.ToString() + " rectangle");
+                MessageBox.Show("You hit " + hitList.Count.ToString() + " rectangle");
             }
         }
 

@@ -16,7 +16,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <ListBox SelectionChanged="sidebar_selectedChanged" SelectionMode="Single" x:Name="sidebar" Margin="0">
+        <ListBox SelectionChanged="sidebar_selectedChanged" SelectionMode="Single" x:Name="sidebar" Margin="0"  Background="Transparent" Foreground="{DynamicResource fg}" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <hm:NavButton Text="Metrix Transform        " NavUri="/2DTransformation/Views/MetrixTransformView.xaml"/>
             <hm:NavButton Text="Perpendicaular Line     " NavUri="/2DTransformation/Views/PerpendicularLineView.xaml"/>
             <hm:NavButton Text="MatrixTransform Class" NavUri="/2DTransformation/Views/MatrixTransformClassView.xaml"/>
@@ -24,6 +24,6 @@
             <hm:NavButton Text="Translate Transform     " NavUri="/2DTransformation/Views/TranslateTransformView.xaml"/>
             <hm:NavButton Text="Composite Trabsform     " NavUri="/2DTransformation/Views/CompositeTransformView.xaml"/>
         </ListBox>
-        <Frame  Grid.Column="1" x:Name="navframe" NavigationUIVisibility="Hidden" Background="#e9ecef"/>
+        <Frame  Grid.Column="1" x:Name="navframe" NavigationUIVisibility="Hidden"/>
     </Grid>
 </UserControl>

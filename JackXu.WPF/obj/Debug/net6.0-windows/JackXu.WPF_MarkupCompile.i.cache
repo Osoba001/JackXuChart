@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\DELL\Desktop\Apps\JackXu\JackXuChart\JackXu.WPF\obj\Debug\net6.0-windows\
+C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\
 JackXu.WPF
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\DELL\Desktop\Apps\JackXu\JackXuChart\JackXu.WPF\App.xaml
+C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\App.xaml
 21-1235839564
 
 28353109717
-197724868078
+1971799298759
 2DTransformation\Views\CompositeTransformView.xaml;2DTransformation\Views\MatrixTransformClassView.xaml;2DTransformation\Views\MetrixTransformView.xaml;2DTransformation\Views\PerpendicularLineView.xaml;2DTransformation\Views\ScaleTransformView.xaml;2DTransformation\Views\TransfermationView.xaml;2DTransformation\Views\TranslateTransformView.xaml;GraphicBasic2D\Views\BezierCurvesView.xaml;GraphicBasic2D\Views\Chart2DResizableCanvasView.xaml;GraphicBasic2D\Views\Chart2DSysView.xaml;GraphicBasic2D\Views\GraphicBasic2DView.xaml;GraphicBasic2D\Views\HitTestingView.xaml;GraphicBasic2D\Views\LineDashStyleView.xaml;GraphicBasic2D\Views\LineInCustomSystemView.xaml;GraphicBasic2D\Views\PolyLineView.xaml;GraphicBasic2D\Views\ScaleInCustomSys.xaml;GraphicBasic2D\Views\ScaleInCustomSysView.xaml;MainWindow.xaml;Main\Views\HomeView.xaml;Main\Views\StartupWindow.xaml;Themes\Generic.xaml;
 
 True

@@ -9,14 +9,10 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -25,14 +21,10 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -41,14 +33,10 @@
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -155,23 +143,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\kelly.osoba\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\Apps\\JackXu\\JackXuChart\\JackXu.WPF\\JackXu.WPF.csproj",
+      "projectUniqueName": "C:\\Users\\kelly.osoba\\Desktop\\APPs\\JackXuCurrent\\JackXu\\JackXu.WPF\\JackXu.WPF.csproj",
       "projectName": "JackXu.WPF",
-      "projectPath": "C:\\Users\\DELL\\Desktop\\Apps\\JackXu\\JackXuChart\\JackXu.WPF\\JackXu.WPF.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Desktop\\Apps\\JackXu\\JackXuChart\\JackXu.WPF\\obj\\",
+      "projectPath": "C:\\Users\\kelly.osoba\\Desktop\\APPs\\JackXuCurrent\\JackXu\\JackXu.WPF\\JackXu.WPF.csproj",
+      "packagesPath": "C:\\Users\\kelly.osoba\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kelly.osoba\\Desktop\\APPs\\JackXuCurrent\\JackXu\\JackXu.WPF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kelly.osoba\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows"
+        "net6.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -181,8 +169,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\DELL\\Desktop\\Apps\\JackXu\\JackXuChart\\JackXu.Library\\JackXu.Library.csproj": {
-              "projectPath": "C:\\Users\\DELL\\Desktop\\Apps\\JackXu\\JackXuChart\\JackXu.Library\\JackXu.Library.csproj"
+            "C:\\Users\\kelly.osoba\\Desktop\\APPs\\JackXuCurrent\\JackXu\\JackXu.Library\\JackXu.Library.csproj": {
+              "projectPath": "C:\\Users\\kelly.osoba\\Desktop\\APPs\\JackXuCurrent\\JackXu\\JackXu.Library\\JackXu.Library.csproj"
             }
           }
         }
@@ -208,8 +196,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -221,7 +208,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

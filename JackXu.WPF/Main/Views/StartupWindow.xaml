@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JackXu.WPF.Main.Views"
         xmlns:hm="clr-namespace:JackXu.WPF.CustomControl"
-        mc:Ignorable="d"
+        mc:Ignorable="d" Background="{DynamicResource myBackGround}" Foreground="{DynamicResource fg}"
         Title="StartupWindow" Height="750" Width="1080">
-    <Grid>
+    <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
@@ -18,17 +18,28 @@
             <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
 
-        <ListBox Grid.Row="0" SelectionMode="Single" SelectionChanged="sidebar_SelectionChanged"  BorderThickness="0" x:Name="Menubar">
-            <ListBox.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <WrapPanel IsItemsHost="True"/>
-                </ItemsPanelTemplate>
-            </ListBox.ItemsPanel>
-            <hm:NavButton Text="Home" NavUri="/Main/Views/HomeView.xaml"/>
-            <hm:NavButton Text="Graphics Basic" NavUri="/GraphicBasic2D/Views/GraphicBasic2DView.xaml"/>
-            <hm:NavButton Text="2D Transform" NavUri="/2DTransformation/Views/TransfermationView.xaml"/>
-        </ListBox>
-
-        <Frame Grid.Row="1" Grid.ColumnSpan="2" x:Name="navframe" NavigationUIVisibility="Hidden" Background="#e9ecef"/>
+        <Grid Grid.Row="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            <ListBox SelectionMode="Single" SelectionChanged="sidebar_SelectionChanged"  BorderThickness="0" x:Name="Menubar" Background="Transparent" Foreground="{DynamicResource fg}">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel IsItemsHost="True"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <hm:NavButton Text="Home" NavUri="/Main/Views/HomeView.xaml"/>
+                <hm:NavButton Text="Graphics Basic" NavUri="/GraphicBasic2D/Views/GraphicBasic2DView.xaml"/>
+                <hm:NavButton Text="2D Transform" NavUri="/2DTransformation/Views/TransfermationView.xaml"/>
+            </ListBox>
+            <WrapPanel Grid.Column="1">
+                <RadioButton GroupName="bg" Name="bgRed" Content="red" Checked="bgRed_Checked" Foreground="{DynamicResource fg}"/>
+                <RadioButton GroupName="bg" Name="bgBlue" Content="blue" Checked="bgBlue_Checked" Foreground="{DynamicResource fg}"/>
+                <RadioButton GroupName="bg" Name="bgWhite" Content="white" IsChecked="True" Checked="bgWhite_Checked" Foreground="{DynamicResource fg}"/>
+                <RadioButton GroupName="bg" Name="bgBlack" Content="dark" Checked="bgBlack_Checked" Foreground="{DynamicResource fg}"/>
+            </WrapPanel>
+        </Grid>
+        <Frame Grid.Row="1" Grid.ColumnSpan="2" x:Name="navframe" NavigationUIVisibility="Hidden" />
     </Grid>
 </Window>

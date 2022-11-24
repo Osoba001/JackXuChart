@@ -5,10 +5,11 @@
 
 
     <Style TargetType="{x:Type local:NavButton}">
+        
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:NavButton}">
-                    <Border x:Name="back" CornerRadius="8" Background="Transparent" 
+                    <Border x:Name="back" CornerRadius="8" 
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">
 
@@ -22,9 +23,11 @@
                             <Image Grid.Row="0" Source="{TemplateBinding ImageSource}" Stretch="Uniform" Margin="2"/>
                             <TextBlock Grid.Row="1" Text="{TemplateBinding Text}" TextAlignment="Center" TextWrapping="Wrap" Margin="2"/>
                             <Rectangle Name="Line" Grid.RowSpan="2" Fill="Transparent" Stroke="RoyalBlue" StrokeDashArray="1,2" StrokeThickness="0"/>
+                            
                         </Grid>
 
                     </Border>
+                    
 
 
                     <ControlTemplate.Triggers>

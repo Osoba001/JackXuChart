@@ -10,7 +10,17 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "916f06cf-a48f-460e-ba3b-0ca1a7fe7413": {
+      "ProjectGuid": "916f06cf-a48f-460e-ba3b-0ca1a7fe7413",
+      "DisplayName": "JackXu.Library",
+      "ColorIndex": 1
+    },
+    "0c0a5b10-7f1d-4837-9ac9-902ef497d7c3": {
+      "ProjectGuid": "0c0a5b10-7f1d-4837-9ac9-902ef497d7c3",
+      "DisplayName": "JackXu.Test",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }

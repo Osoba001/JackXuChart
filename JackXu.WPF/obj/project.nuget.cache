@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ZKbKH9yxGiJsa+nVub0Q9DEbusX+fsFk6sQLhzZshGv03mx+95/eq+AE8zzAizdA/p/aNbP9bO6zM6MmEsmiNw==",
+  "dgSpecHash": "EwsEkAIlbooGmx4dECjGFGmNrigXZ903uWnHEZoxUMiFGjxwvSf3VgXMsR/56LSc6+gQO9kfRhAkRcqrOqJvzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\Desktop\\Apps\\JackXu\\JackXuChart\\JackXu.WPF\\JackXu.WPF.csproj",
+  "projectFilePath": "C:\\Users\\kelly.osoba\\Desktop\\APPs\\JackXuCurrent\\JackXu\\JackXu.WPF\\JackXu.WPF.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\kelly.osoba\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
+    "C:\\Users\\kelly.osoba\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\kelly.osoba\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
