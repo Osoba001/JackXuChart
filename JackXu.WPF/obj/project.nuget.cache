@@ -1,12 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "EwsEkAIlbooGmx4dECjGFGmNrigXZ903uWnHEZoxUMiFGjxwvSf3VgXMsR/56LSc6+gQO9kfRhAkRcqrOqJvzw==",
+  "dgSpecHash": "21jYmDyfIbzNd6C66T6blJqKFPKZk673K10TZP4MBww0A73JnceoUsHp7fZXLhtDy2khxXTRmXCNF+VHXF3SkA==",
   "success": true,
   "projectFilePath": "C:\\Users\\kelly.osoba\\Desktop\\APPs\\JackXuCurrent\\JackXu\\JackXu.WPF\\JackXu.WPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kelly.osoba\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
     "C:\\Users\\kelly.osoba\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\kelly.osoba\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\kelly.osoba\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\kelly.osoba\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\kelly.osoba\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\kelly.osoba\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512",
+    "C:\\Users\\kelly.osoba\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\kelly.osoba\\.nuget\\packages\\wpflocalizeextension\\3.9.4\\wpflocalizeextension.3.9.4.nupkg.sha512",
+    "C:\\Users\\kelly.osoba\\.nuget\\packages\\xamlmarkupextensions\\2.1.3\\xamlmarkupextensions.2.1.3.nupkg.sha512"
   ],
   "logs": []
 }

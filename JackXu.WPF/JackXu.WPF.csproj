@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
+    <PackageReference Include="WPFLocalizeExtension" Version="3.9.4" />
   </ItemGroup>
 
   <ItemGroup>

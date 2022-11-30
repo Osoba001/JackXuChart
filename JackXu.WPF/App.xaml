@@ -3,7 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:JackXu.WPF">
     <Application.Resources>
-        <DrawingBrush x:Key="MyGrayGridBrush" Viewport="0 0 10 10"
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/resources/applevelresources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        <!--<DrawingBrush x:Key="MyGrayGridBrush" Viewport="0 0 10 10"
                       ViewportUnits="Absolute" TileMode="Tile">
             <DrawingBrush.Drawing>
                 <DrawingGroup>
@@ -22,6 +27,7 @@
 
                 </DrawingGroup>
             </DrawingBrush.Drawing>
-        </DrawingBrush>
+        </DrawingBrush>-->
     </Application.Resources>
+   
 </Application>

@@ -197,3 +197,9 @@ C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\obj\Debug\net6
 C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\ref\JackXu.WPF.dll
 C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\JackXu.WPF.pdb
 C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\JackXu.WPF.genruntimeconfig.cache
+C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\bin\Debug\net6.0-windows\System.Management.dll
+C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\bin\Debug\net6.0-windows\WPFLocalizeExtension.dll
+C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\bin\Debug\net6.0-windows\XAMLMarkupExtensions.dll
+C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\Resources\AppLevelResources.baml
+C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\Resources\MatrixControlResourse.baml
