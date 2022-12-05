@@ -28,4 +28,8 @@
     <Resource Include="Task\Icons\refund.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Task\Images\" />
+  </ItemGroup>
+
 </Project>
