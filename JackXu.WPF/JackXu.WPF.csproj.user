@@ -61,6 +61,12 @@
     <Compile Update="Main\Views\StartupWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Task\Views\CustomerInvoiceView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Task\Views\TaskViews.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="2DTransformation\Views\CompositeTransformView.xaml">
@@ -121,6 +127,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resources\MatrixControlResourse.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Task\Views\CustomerInvoiceView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Task\Views\TaskViews.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Generic.xaml">

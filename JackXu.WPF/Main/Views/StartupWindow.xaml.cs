@@ -59,6 +59,7 @@ namespace JackXu.WPF.Main.Views
             this.Resources["myBackGround"] = new SolidColorBrush(Colors.Black);
             this.Resources["sideBarBg"] = new SolidColorBrush(Colors.DarkGray);
             this.Resources["fg"] = new SolidColorBrush(Colors.White);
+            //this.Resources["fromResourceDictionary"] = Application.Current.FindResource("key");
         }
     }
 }

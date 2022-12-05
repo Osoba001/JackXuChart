@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="JackXu.WPF.Task.Views.CustomerInvoiceView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:JackXu.WPF.Task.ViewModels"
+             xmlns:vc="clr-namespace:JackXu.WPF.Task.ValueConverter"
+             xmlns:local="clr-namespace:JackXu.WPF.Task.Views"
+             mc:Ignorable="d" 
+             d:DataContext="{d:DesignInstance Type=vm:CustomerInvoiceViewModel}"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <vc:ValueToPercentage x:Key="valToPer"/>
+        <vc:PaymentStatus x:Key="paymentSt"/>
+        <vc:ValueToColour x:Key="paymentCo"/>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <DataGrid HorizontalGridLinesBrush="DarkOrange" GridLinesVisibility="Horizontal" Grid.Row="1" ItemsSource="{Binding CustomerInvoice}" AutoGenerateColumns="False" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn/>
+                <DataGridTextColumn Header="Invoice" Binding="{Binding Invoice}" Width="120"/>
+                <DataGridTemplateColumn Header="Status" Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Path Data="{Binding Status, Converter={StaticResource paymentSt}}" Fill="{Binding Status, Converter={StaticResource paymentCo}}"/>
+                                <TextBlock Text="{Binding Status}" Foreground="{Binding Status, Converter={StaticResource paymentCo}}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Customer" Width="150">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid VerticalAlignment="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <Image HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                
+                                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                                    <TextBlock Text="{Binding Customer.Name}" Margin="0 0 5 0"/>
+                                    <TextBlock Text="{Binding Customer.Email}" FontWeight="Bold"/>
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Progress" Width="160">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <ProgressBar Value="{Binding Progress}" Minimum="0" Maximum="100" Width="100" Height="10" VerticalAlignment="Center">
+                                    
+                                </ProgressBar>
+                                <TextBlock Text="{Binding Progress, Converter={StaticResource valToPer}}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

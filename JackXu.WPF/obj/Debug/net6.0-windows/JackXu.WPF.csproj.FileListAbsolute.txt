@@ -203,3 +203,7 @@ C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\bin\Debug\net6
 C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
 C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\Resources\AppLevelResources.baml
 C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\Resources\MatrixControlResourse.baml
+C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\Task\Views\CustomerInvoiceView.g.cs
+C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\Task\Views\CustomerInvoiceView.baml
+C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\Task\Views\TaskViews.g.cs
+C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\obj\Debug\net6.0-windows\Task\Views\TaskViews.baml

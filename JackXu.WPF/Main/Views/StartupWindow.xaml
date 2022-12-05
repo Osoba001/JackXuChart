@@ -32,6 +32,7 @@
                 <hm:NavButton Text="Home" NavUri="/Main/Views/HomeView.xaml"/>
                 <hm:NavButton Text="Graphics Basic" NavUri="/GraphicBasic2D/Views/GraphicBasic2DView.xaml"/>
                 <hm:NavButton Text="2D Transform" NavUri="/2DTransformation/Views/TransfermationView.xaml"/>
+                <hm:NavButton Text="Task" NavUri="/Task/Views/TaskViews.xaml"/>
             </ListBox>
             <WrapPanel Grid.Column="1">
                 <RadioButton GroupName="bg" Name="bgRed" Content="red" Checked="bgRed_Checked" Foreground="{DynamicResource fg}"/>

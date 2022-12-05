@@ -8,26 +8,6 @@
                 <ResourceDictionary Source="/resources/applevelresources.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-        <!--<DrawingBrush x:Key="MyGrayGridBrush" Viewport="0 0 10 10"
-                      ViewportUnits="Absolute" TileMode="Tile">
-            <DrawingBrush.Drawing>
-                <DrawingGroup>
-                    <DrawingGroup.Children>
-                        <GeometryDrawing Brush="White">
-                            <GeometryDrawing.Geometry>
-                                <RectangleGeometry Rect="0 0 1 1"/>
-                            </GeometryDrawing.Geometry>
-                        </GeometryDrawing>
-
-                        <GeometryDrawing Geometry="M0,0 L1,0 1,0.1, 0,0.1Z"
-                                         Brush="#FFEDEAEA"/>
-                        <GeometryDrawing Geometry="M0,0 L0,1 0.1,1, 0.1,0Z"
-                                         Brush="#EEE"/>
-                    </DrawingGroup.Children>
-
-                </DrawingGroup>
-            </DrawingBrush.Drawing>
-        </DrawingBrush>-->
     </Application.Resources>
    
 </Application>

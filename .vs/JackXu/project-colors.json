@@ -20,7 +20,12 @@
       "ProjectGuid": "0c0a5b10-7f1d-4837-9ac9-902ef497d7c3",
       "DisplayName": "JackXu.Test",
       "ColorIndex": 2
+    },
+    "1381d9b3-5a56-4f74-8a19-a628115141ca": {
+      "ProjectGuid": "1381d9b3-5a56-4f74-8a19-a628115141ca",
+      "DisplayName": "Practice",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }
