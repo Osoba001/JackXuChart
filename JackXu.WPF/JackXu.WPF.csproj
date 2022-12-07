@@ -8,9 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Task\Icons\cancel.png" />
-    <None Remove="Task\Icons\paid.png" />
-    <None Remove="Task\Icons\refund.png" />
+    <None Remove="Task\Images\1.jpg" />
+    <None Remove="Task\Images\2.jpg" />
+    <None Remove="Task\Images\3.jpg" />
+    <None Remove="Task\Images\5.jpg" />
+    <None Remove="Task\Images\7.jpg" />
+    <None Remove="Task\Images\person4.jpg" />
+    <None Remove="Task\Images\person6.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,13 +27,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Task\Icons\cancel.png" />
-    <Resource Include="Task\Icons\paid.png" />
-    <Resource Include="Task\Icons\refund.png" />
+    <Resource Include="Task\Images\1.jpg" />
+    <Resource Include="Task\Images\2.jpg" />
+    <Resource Include="Task\Images\3.jpg" />
+    <Resource Include="Task\Images\5.jpg" />
+    <Resource Include="Task\Images\7.jpg" />
+    <Resource Include="Task\Images\person4.jpg" />
+    <Resource Include="Task\Images\person6.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Task\Images\" />
+    <Folder Include="Task\Icons\" />
   </ItemGroup>
 
 </Project>

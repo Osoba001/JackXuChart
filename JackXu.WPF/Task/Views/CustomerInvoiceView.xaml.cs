@@ -26,5 +26,6 @@ namespace JackXu.WPF.Task.Views
             InitializeComponent();
             DataContext = new CustomerInvoiceViewModel();
         }
+       
     }
 }

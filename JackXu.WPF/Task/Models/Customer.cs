@@ -8,15 +8,24 @@ namespace JackXu.WPF.Task.Models
 {
     public class Customer
     {
-        public Customer(int id, string name, string email)
+        public Customer(int id, string fName,string lName, string email)
         {
             Id = id;
-            Name = name;
+            FirstName = fName;
+            LastName = lName;
             Email = email;
         }
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string FullName =>$"{FirstName} {LastName}";
+        public string Initial => $"{GetInitial(FirstName)}{GetInitial(LastName)}";
         public string Email { get; set; }
+
+        private string GetInitial(string str)
+        {
+            return str.Substring(0, 1);
+        }
     }
     public class CustomerInvoice
     {
