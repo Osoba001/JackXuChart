@@ -1,4 +1,6 @@
 ﻿using JackXu.WPF.Main.Views;
+using JackXu.WPF.Task.Models;
+using JackXu.WPF.Task.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -15,23 +17,26 @@ namespace JackXu.WPF
     /// </summary>
     public partial class App : Application
     {
-        public ServiceProvider _serviceProvider { get; set; }
+        public static IServiceProvider ServiceProvider { get; set; }
         public App()
         {
             ServiceCollection service = new();
             ConfigServices(service);
-            _serviceProvider = service.BuildServiceProvider();
+            ServiceProvider = service.BuildServiceProvider();
 
 
         }
         private static void ConfigServices(ServiceCollection services)
         {
             services.AddSingleton<StartupWindow>();
+            services.AddScoped<CustomerInvoiceViewModel>();
+            
+            services.AddSingleton<IPayment>(s=> new Payment("GTBank"));
         }
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            var startupWindow = _serviceProvider.GetRequiredService<StartupWindow>();
+            var startupWindow = ServiceProvider.GetRequiredService<StartupWindow>();
             startupWindow.Show();
         }
     }

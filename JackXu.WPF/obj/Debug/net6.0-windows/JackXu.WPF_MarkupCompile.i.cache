@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\kelly.osoba\Desktop\APPs\JackXuCurrent\JackXu\JackXu.WPF\App.xaml
 251228664930
 
-361572358899
+401818147043
 201-2076002575
 2DTransformation\Views\CompositeTransformView.xaml;2DTransformation\Views\MatrixTransformClassView.xaml;2DTransformation\Views\MetrixTransformView.xaml;2DTransformation\Views\PerpendicularLineView.xaml;2DTransformation\Views\ScaleTransformView.xaml;2DTransformation\Views\TransfermationView.xaml;2DTransformation\Views\TranslateTransformView.xaml;GraphicBasic2D\Views\BezierCurvesView.xaml;GraphicBasic2D\Views\Chart2DResizableCanvasView.xaml;GraphicBasic2D\Views\Chart2DSysView.xaml;GraphicBasic2D\Views\GraphicBasic2DView.xaml;GraphicBasic2D\Views\HitTestingView.xaml;GraphicBasic2D\Views\LineDashStyleView.xaml;GraphicBasic2D\Views\LineInCustomSystemView.xaml;GraphicBasic2D\Views\PolyLineView.xaml;GraphicBasic2D\Views\ScaleInCustomSys.xaml;GraphicBasic2D\Views\ScaleInCustomSysView.xaml;MainWindow.xaml;Main\Views\HomeView.xaml;Main\Views\StartupWindow.xaml;Resources\AppLevelResources.xaml;Resources\MatrixControlResourse.xaml;Task\Views\CustomerInvoiceView.xaml;Task\Views\TaskViews.xaml;Themes\Generic.xaml;
 
-False
+True
 

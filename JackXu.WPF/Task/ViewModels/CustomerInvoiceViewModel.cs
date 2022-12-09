@@ -10,10 +10,16 @@ namespace JackXu.WPF.Task.ViewModels
 {
     public class CustomerInvoiceViewModel
     {
-        public CustomerInvoiceViewModel()
-        {
-            CustomerInvoice= BuildInvoices();
+        private readonly IPayment payment1;
+        //public CustomerInvoiceViewModel()
+        //{
+        //    CustomerInvoice= BuildInvoices();
 
+        //}
+        public CustomerInvoiceViewModel(IPayment payment)
+        {
+            this.payment1= payment;
+            CustomerInvoice = BuildInvoices();
         }
 
         public List<CustomerInvoice> CustomerInvoice { get; set; }

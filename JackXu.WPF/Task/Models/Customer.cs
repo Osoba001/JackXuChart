@@ -22,6 +22,9 @@ namespace JackXu.WPF.Task.Models
         public string Initial => $"{GetInitial(FirstName)}{GetInitial(LastName)}";
         public string Email { get; set; }
 
+     
+
+
         private string GetInitial(string str)
         {
             return str.Substring(0, 1);
@@ -40,6 +43,15 @@ namespace JackXu.WPF.Task.Models
         public Status Status { get; set; }
         public Customer Customer { get; set; }
         public double Progress { get; set; }
+
+        private List<Regions> _regions;
+
+        public List<Regions> Regions
+        {
+            get { return _regions; }
+            set { _regions = value; }
+        }
+
     }
 
     public enum Status

@@ -1,4 +1,6 @@
-﻿using JackXu.WPF.Task.ViewModels;
+﻿using JackXu.WPF.Task.Models;
+using JackXu.WPF.Task.ViewModels;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,11 +23,29 @@ namespace JackXu.WPF.Task.Views
     /// </summary>
     public partial class CustomerInvoiceView : UserControl
     {
+        private readonly IPayment payment;
+  
+
         public CustomerInvoiceView()
         {
             InitializeComponent();
-            DataContext = new CustomerInvoiceViewModel();
+            
+            payment = Payment.Instance;
+            DataContext = App.ServiceProvider.GetRequiredService<CustomerInvoiceViewModel>();
+            
         }
-       
+
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txtBkSearch.Visibility = Visibility.Collapsed;
+        }
+
+        private void txtSearch_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (txtSearch.Text.Trim() == string.Empty)
+            {
+                txtBkSearch.Visibility = Visibility.Visible;
+            }
+        }
     }
 }
